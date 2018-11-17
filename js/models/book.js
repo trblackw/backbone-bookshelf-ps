@@ -1,14 +1,13 @@
 var app = app || {};
 
 app.Book = Backbone.Model.extend({
-  defaults: {
-    imageLinks: "",
-    title: "",
-    author: "",
-    publishedDate: "",
-    keywords: [],
-    publisher: "",
-    description: "",
-    categories: []
-  }
-});
+   defaults: () => ({
+     imageLinks: "",
+     title: "",
+     authors: [],
+     publishedDate: "",
+     publisher: "",
+     description: "",
+     categories: []
+   })
+ });
